@@ -1,0 +1,181 @@
+
+<MainScreen>
+    BoxLayout:
+        orientation: "vertical"
+        padding: 10
+        spacing: 10
+        md_bg_color: 0.2, 0.2, 0.2, 1  # Couleur de fond gris foncé pour correspondre à l'aspect de la calculatrice
+
+        # Display Screen
+        MDTextField:
+            id: display
+            text: "0"
+            halign: "right"
+            font_size: 32
+            readonly: True
+            multiline: False
+            size_hint_y: 0.2
+            md_bg_color: 0.1, 0.1, 0.1, 1
+            text_color: 1, 1, 1, 1
+
+        # Button Grid Layout
+        GridLayout:
+            cols: 5
+            rows: 8
+            spacing: 5
+            padding: 5
+
+            # Row 1 - Function and Mode Buttons
+            MDRaisedButton:
+                text: "SHIFT"
+                md_bg_color: 1, 0.84, 0, 1  # Jaune
+                text_color: 0, 0, 0, 1
+            MDRaisedButton:
+                text: "ALPHA"
+                md_bg_color: 1, 0, 0, 1  # Rouge
+                text_color: 1, 1, 1, 1
+            MDRaisedButton:
+                text: "MODE"
+                md_bg_color: 0.5, 0.5, 0.5, 1  # Gris
+            MDRaisedButton:
+                text: "REPLAY"
+                md_bg_color: 0.5, 0.5, 0.5, 1
+            MDRaisedButton:
+                text: "ON/OFF"
+                md_bg_color: 0.7, 0, 0, 1  # Rouge foncé
+
+            # Row 2 - Scientific Functions 1
+            MDRaisedButton:
+                text: "CALC"
+                md_bg_color: 0.2, 0.2, 0.8, 1
+            MDRaisedButton:
+                text: "FIX"
+                md_bg_color: 0.2, 0.2, 0.8, 1
+            MDRaisedButton:
+                text: "FMA"
+                md_bg_color: 0.2, 0.2, 0.8, 1
+            MDRaisedButton:
+                text: "LOG"
+                md_bg_color: 0.2, 0.2, 0.8, 1
+            MDRaisedButton:
+                text: "LN"
+                md_bg_color: 0.2, 0.2, 0.8, 1
+
+            # Row 3 - Scientific Functions 2
+            MDRaisedButton:
+                text: "SCI"
+                md_bg_color: 0.2, 0.2, 0.8, 1
+            MDRaisedButton:
+                text: "ENG"
+                md_bg_color: 0.2, 0.2, 0.8, 1
+            MDRaisedButton:
+                text: "BIN"
+                md_bg_color: 0.2, 0.2, 0.8, 1
+            MDRaisedButton:
+                text: "DEC"
+                md_bg_color: 0.2, 0.2, 0.8, 1
+            MDRaisedButton:
+                text: "HEX"
+                md_bg_color: 0.2, 0.2, 0.8, 1
+
+            # Row 4 - Trigonometric and Hyperbolic Functions
+            MDRaisedButton:
+                text: "SIN"
+                md_bg_color: 0.2, 0.2, 0.8, 1
+            MDRaisedButton:
+                text: "COS"
+                md_bg_color: 0.2, 0.2, 0.8, 1
+            MDRaisedButton:
+                text: "TAN"
+                md_bg_color: 0.2, 0.2, 0.8, 1
+            MDRaisedButton:
+                text: "HYP"
+                md_bg_color: 0.2, 0.2, 0.8, 1
+            MDRaisedButton:
+                text: "ANS"
+                md_bg_color: 0.5, 0.5, 0.5, 1
+
+            # Row 5 - Memory and Variable Buttons
+            MDRaisedButton:
+                text: "M+"
+                md_bg_color: 0.3, 0.3, 0.3, 1
+            MDRaisedButton:
+                text: "M-"
+                md_bg_color: 0.3, 0.3, 0.3, 1
+            MDRaisedButton:
+                text: "MR"
+                md_bg_color: 0.3, 0.3, 0.3, 1
+            MDRaisedButton:
+                text: "STO"
+                md_bg_color: 0.3, 0.3, 0.3, 1
+            MDRaisedButton:
+                text: "RCL"
+                md_bg_color: 0.3, 0.3, 0.3, 1
+
+            # Row 6 - Number Buttons
+            MDRaisedButton:
+                text: "7"
+                md_bg_color: 0.1, 0.1, 0.1, 1
+            MDRaisedButton:
+                text: "8"
+                md_bg_color: 0.1, 0.1, 0.1, 1
+            MDRaisedButton:
+                text: "9"
+                md_bg_color: 0.1, 0.1, 0.1, 1
+            MDRaisedButton:
+                text: "DEL"
+                md_bg_color: 1, 0, 0, 1
+            MDRaisedButton:
+                text: "ON/C"
+                md_bg_color: 1, 0, 0, 1
+
+            # Row 7 - Number Buttons
+            MDRaisedButton:
+                text: "4"
+                md_bg_color: 0.1, 0.1, 0.1, 1
+            MDRaisedButton:
+                text: "5"
+                md_bg_color: 0.1, 0.1, 0.1, 1
+            MDRaisedButton:
+                text: "6"
+                md_bg_color: 0.1, 0.1, 0.1, 1
+            MDRaisedButton:
+                text: "*"
+                md_bg_color: 0.4, 0.4, 0.4, 1
+            MDRaisedButton:
+                text: "/"
+                md_bg_color: 0.4, 0.4, 0.4, 1
+
+            # Row 8 - Number Buttons and Operators
+            MDRaisedButton:
+                text: "1"
+                md_bg_color: 0.1, 0.1, 0.1, 1
+            MDRaisedButton:
+                text: "2"
+                md_bg_color: 0.1, 0.1, 0.1, 1
+            MDRaisedButton:
+                text: "3"
+                md_bg_color: 0.1, 0.1, 0.1, 1
+            MDRaisedButton:
+                text: "+"
+                md_bg_color: 0.4, 0.4, 0.4, 1
+            MDRaisedButton:
+                text: "-"
+                md_bg_color: 0.4, 0.4, 0.4, 1
+
+            # Row 9 - Bottom Row with 0, ., EXP, DRG, and Equals
+            MDRaisedButton:
+                text: "0"
+                md_bg_color: 0.1, 0.1, 0.1, 1
+            MDRaisedButton:
+                text: "."
+                md_bg_color: 0.1, 0.1, 0.1, 1
+            MDRaisedButton:
+                text: "EXP"
+                md_bg_color: 0.2, 0.2, 0.8, 1
+            MDRaisedButton:
+                text: "DRG"
+                md_bg_color: 0.2, 0.2, 0.8, 1
+            MDRaisedButton:
+                text: "="
+                md_bg_color: 0, 0.5, 0, 1  # Vert pour le bouton "="
